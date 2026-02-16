@@ -39,9 +39,13 @@ net:backward(input, gradOutput)
 
 #### Containers
 - **Sequential**: Chain modules in sequence
+- **Parallel**: Process inputs through multiple modules in parallel
+- **Concat**: Concatenate outputs from multiple modules
 
 #### Layers
 - **Linear**: Fully connected layer (weight matrix + bias)
+- **Identity**: Pass-through layer
+- **Reshape**: Reshape input tensors
 
 #### Activations
 - **ReLU**: Rectified Linear Unit
@@ -51,11 +55,19 @@ net:backward(input, gradOutput)
 #### Loss Functions
 - **MSECriterion**: Mean Squared Error
 
+### Examples
+
+See `example_regression.lua` for a complete training example:
+```bash
+lua example_regression.lua
+```
+
 ### Testing
 
 Run the test suite:
 ```bash
 lua test_nn.lua
+lua test_nn_extended.lua
 ```
 
 ### Architecture
