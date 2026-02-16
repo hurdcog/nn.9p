@@ -10,9 +10,13 @@ nn.Container = require('Container')
 
 -- Containers
 nn.Sequential = require('Sequential')
+nn.Parallel = require('Parallel')
+nn.Concat = require('Concat')
 
 -- Layers
 nn.Linear = require('Linear')
+nn.Identity = require('Identity')
+nn.Reshape = require('Reshape')
 
 -- Activations
 nn.ReLU = require('ReLU')
